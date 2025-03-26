@@ -1,0 +1,16 @@
+POST http://localhost:5123/api/users/login
+Content-Type: application/json
+
+{
+    "email": "john.doe@example.com",
+    "password": "password"
+}
+
+###
+GET http://localhost:5123/api/users/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNzQyOTU2Mzk2LCJleHAiOjE3NDI5NTk5OTYsImlzcyI6IllvdXJBcHBJc3N1ZXIiLCJhdWQiOiJZb3VyQXBwQXVkaWVuY2UifQ.yqPMaqZXUEsxnbsPrVdGlj7_Dk9GwuNYz0h3-76t630
+
+
+###
+GET http://localhost:5123/api/users?page=1&pageSize=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNzQyOTU2NjEwLCJleHAiOjE3NDI5NjAyMTAsImlzcyI6IllvdXJBcHBJc3N1ZXIiLCJhdWQiOiJZb3VyQXBwQXVkaWVuY2UifQ.67PTd-hWJWQM2S7RRns6HMWqEDVyHZy_xW_WVhp3ilk
